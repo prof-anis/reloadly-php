@@ -17,7 +17,7 @@ composer require busybrain/reloadly
   $client = new Reloadly($client_id, $client_secret, $audience);
   
 ```
-  The audience argument has a default value of andbox. Set it to live to go live
+  The audience argument has a default value of sandbox. Set it to live to go live
 
 ## available methods
 The package covers all the available reloadly API. 
