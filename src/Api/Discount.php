@@ -11,7 +11,7 @@ class Discount extends BaseApi
         return $this->get(self::URI . '/commissions', $parameters);
     }
 
-    public function fetchById(string|int $id): string | array
+    public function fetchById(string | int $id): string | array
     {
         return   $this->get(self::URI . '/' . $id . '/commissions');
     }

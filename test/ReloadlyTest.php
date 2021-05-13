@@ -2,6 +2,7 @@
 
 namespace Tobexkee\Reloadly\Test;
 
+use PHPUnit\Framework\TestCase;
 use Tobexkee\Reloadly\Api\Account;
 use Tobexkee\Reloadly\Api\Countries;
 use Tobexkee\Reloadly\Api\Discount;
@@ -12,7 +13,6 @@ use Tobexkee\Reloadly\Api\Topup;
 use Tobexkee\Reloadly\Api\Transactions;
 use Tobexkee\Reloadly\Exceptions\BadMethodCallException;
 use Tobexkee\Reloadly\Reloadly;
-use PHPUnit\Framework\TestCase;
 
 class ReloadlyTest extends TestCase
 {

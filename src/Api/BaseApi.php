@@ -2,13 +2,13 @@
 
 namespace Tobexkee\Reloadly\Api;
 
+use GuzzleHttp\Exception\ClientException;
 use Tobexkee\Reloadly\Client;
 use Tobexkee\Reloadly\Contract\ApiInterface;
 use Tobexkee\Reloadly\Contract\ApplicationInterface;
 use Tobexkee\Reloadly\Contract\Config;
 use Tobexkee\Reloadly\Exceptions\ClientErrorException;
 use Tobexkee\Reloadly\Http\ResponseMediator;
-use GuzzleHttp\Exception\ClientException;
 
 abstract class BaseApi implements ApiInterface
 {

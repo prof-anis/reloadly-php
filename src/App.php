@@ -2,13 +2,13 @@
 
 namespace Tobexkee\Reloadly;
 
+use Illuminate\Container\Container;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Tobexkee\Reloadly\Config as ReloadlyConfig;
 use Tobexkee\Reloadly\Contract\ApiInterface;
 use Tobexkee\Reloadly\Contract\ApplicationInterface;
 use Tobexkee\Reloadly\Contract\Config;
 use Tobexkee\Reloadly\Exceptions\BadMethodCallException;
-use Illuminate\Container\Container;
-use Illuminate\Contracts\Container\BindingResolutionException;
 
 class App extends Container implements ApplicationInterface
 {

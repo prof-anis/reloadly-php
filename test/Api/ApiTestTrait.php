@@ -2,10 +2,10 @@
 
 namespace Tobexkee\Reloadly\Test\Api;
 
-use Tobexkee\Reloadly\Client;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Psr7\Response;
 use Mockery;
+use Tobexkee\Reloadly\Client;
 
 trait ApiTestTrait
 {

@@ -2,11 +2,10 @@
 
 namespace Tobexkee\Reloadly\Test\Api;
 
+use Tobexkee\Reloadly\Api\Operators;
 use Tobexkee\Reloadly\App;
 use Tobexkee\Reloadly\Client;
-use Tobexkee\Reloadly\Api\Operators;
 use Tobexkee\Reloadly\Test\TestCase;
-use Tobexkee\Reloadly\Test\Api\ApiTestTrait;
 
 class OperatorsTest extends TestCase
 {

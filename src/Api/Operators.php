@@ -21,7 +21,7 @@ class Operators extends BaseApi
         return $this->get(self::URI . '/countries/' . $iso, $options);
     }
 
-    public function fetchByPhone(string|int $phone, string|int $country_iso): string | array
+    public function fetchByPhone(string | int $phone, string | int $country_iso): string | array
     {
         return $this->get(self::URI . '/auto-detect/phone/' . $phone . '/countries/' . $country_iso);
     }

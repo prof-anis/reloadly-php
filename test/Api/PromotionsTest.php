@@ -2,11 +2,10 @@
 
 namespace Tobexkee\Reloadly\Test\Api;
 
+use Tobexkee\Reloadly\Api\Promotions;
 use Tobexkee\Reloadly\App;
 use Tobexkee\Reloadly\Client;
 use Tobexkee\Reloadly\Test\TestCase;
-use Tobexkee\Reloadly\Api\Promotions;
-use Tobexkee\Reloadly\Test\Api\ApiTestTrait;
 
 class PromotionsTest extends TestCase
 {
