@@ -1,13 +1,13 @@
 <?php
 
-namespace Busybrain\Reloadly\Api;
+namespace Tobexkee\Reloadly\Api;
 
-use Busybrain\Reloadly\Client;
-use Busybrain\Reloadly\Contract\ApiInterface;
-use Busybrain\Reloadly\Contract\ApplicationInterface;
-use Busybrain\Reloadly\Contract\Config;
-use Busybrain\Reloadly\Exceptions\ClientErrorException;
-use Busybrain\Reloadly\Http\ResponseMediator;
+use Tobexkee\Reloadly\Client;
+use Tobexkee\Reloadly\Contract\ApiInterface;
+use Tobexkee\Reloadly\Contract\ApplicationInterface;
+use Tobexkee\Reloadly\Contract\Config;
+use Tobexkee\Reloadly\Exceptions\ClientErrorException;
+use Tobexkee\Reloadly\Http\ResponseMediator;
 use GuzzleHttp\Exception\ClientException;
 
 abstract class BaseApi implements ApiInterface

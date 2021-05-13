@@ -1,6 +1,6 @@
 <?php
 
-namespace Busybrain\Reloadly\Exceptions;
+namespace Tobexkee\Reloadly\Exceptions;
 
 use Throwable;
 

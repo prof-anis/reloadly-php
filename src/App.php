@@ -1,12 +1,12 @@
 <?php
 
-namespace Busybrain\Reloadly;
+namespace Tobexkee\Reloadly;
 
-use Busybrain\Reloadly\Config as ReloadlyConfig;
-use Busybrain\Reloadly\Contract\ApiInterface;
-use Busybrain\Reloadly\Contract\ApplicationInterface;
-use Busybrain\Reloadly\Contract\Config;
-use Busybrain\Reloadly\Exceptions\BadMethodCallException;
+use Tobexkee\Reloadly\Config as ReloadlyConfig;
+use Tobexkee\Reloadly\Contract\ApiInterface;
+use Tobexkee\Reloadly\Contract\ApplicationInterface;
+use Tobexkee\Reloadly\Contract\Config;
+use Tobexkee\Reloadly\Exceptions\BadMethodCallException;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\BindingResolutionException;
 

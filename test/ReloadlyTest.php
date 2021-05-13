@@ -1,17 +1,17 @@
 <?php
 
-namespace Busybrain\Reloadly\Test;
+namespace Tobexkee\Reloadly\Test;
 
-use Busybrain\Reloadly\Api\Account;
-use Busybrain\Reloadly\Api\Countries;
-use Busybrain\Reloadly\Api\Discount;
-use Busybrain\Reloadly\Api\Fxrate;
-use Busybrain\Reloadly\Api\Operators;
-use Busybrain\Reloadly\Api\Promotions;
-use Busybrain\Reloadly\Api\Topup;
-use Busybrain\Reloadly\Api\Transactions;
-use Busybrain\Reloadly\Exceptions\BadMethodCallException;
-use Busybrain\Reloadly\Reloadly;
+use Tobexkee\Reloadly\Api\Account;
+use Tobexkee\Reloadly\Api\Countries;
+use Tobexkee\Reloadly\Api\Discount;
+use Tobexkee\Reloadly\Api\Fxrate;
+use Tobexkee\Reloadly\Api\Operators;
+use Tobexkee\Reloadly\Api\Promotions;
+use Tobexkee\Reloadly\Api\Topup;
+use Tobexkee\Reloadly\Api\Transactions;
+use Tobexkee\Reloadly\Exceptions\BadMethodCallException;
+use Tobexkee\Reloadly\Reloadly;
 use PHPUnit\Framework\TestCase;
 
 class ReloadlyTest extends TestCase

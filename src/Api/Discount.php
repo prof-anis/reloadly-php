@@ -1,6 +1,6 @@
 <?php
 
-namespace Busybrain\Reloadly\Api;
+namespace Tobexkee\Reloadly\Api;
 
 class Discount extends BaseApi
 {

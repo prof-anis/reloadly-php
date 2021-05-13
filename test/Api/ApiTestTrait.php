@@ -1,8 +1,8 @@
 <?php
 
-namespace Busybrain\Reloadly\Test\Api;
+namespace Tobexkee\Reloadly\Test\Api;
 
-use Busybrain\Reloadly\Client;
+use Tobexkee\Reloadly\Client;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Psr7\Response;
 use Mockery;

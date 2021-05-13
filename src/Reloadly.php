@@ -1,8 +1,8 @@
 <?php
 
-namespace Busybrain\Reloadly;
+namespace Tobexkee\Reloadly;
 
-use Busybrain\Reloadly\Api\BaseApi;
+use Tobexkee\Reloadly\Api\BaseApi;
 
 class Reloadly
 {

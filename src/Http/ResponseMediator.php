@@ -1,6 +1,6 @@
 <?php
 
-namespace Busybrain\Reloadly\Http;
+namespace Tobexkee\Reloadly\Http;
 
 use GuzzleHttp\Psr7\Response;
 use Illuminate\Support\Collection;

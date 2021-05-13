@@ -1,10 +1,10 @@
 <?php
 
-namespace Busybrain\Reloadly;
+namespace Tobexkee\Reloadly;
 
-use Busybrain\Reloadly\Contract\ApplicationInterface;
-use Busybrain\Reloadly\Contract\Config;
-use Busybrain\Reloadly\Http\ResponseMediator;
+use Tobexkee\Reloadly\Contract\ApplicationInterface;
+use Tobexkee\Reloadly\Contract\Config;
+use Tobexkee\Reloadly\Http\ResponseMediator;
 use GuzzleHttp\Client as GuzzleClient;
 
 class Client

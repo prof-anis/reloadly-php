@@ -1,11 +1,12 @@
 <?php
 
-namespace Busybrain\Reloadly\Test\Api;
+namespace Tobexkee\Reloadly\Test\Api;
 
-use Busybrain\Reloadly\Api\Discount;
-use Busybrain\Reloadly\App;
-use Busybrain\Reloadly\Client;
-use Busybrain\Reloadly\Test\TestCase;
+use Tobexkee\Reloadly\App;
+use Tobexkee\Reloadly\Client;
+use Tobexkee\Reloadly\Api\Discount;
+use Tobexkee\Reloadly\Test\TestCase;
+use Tobexkee\Reloadly\Test\Api\ApiTestTrait;
 
 class DiscountTest extends TestCase
 {

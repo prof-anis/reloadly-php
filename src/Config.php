@@ -1,8 +1,8 @@
 <?php
 
-namespace Busybrain\Reloadly;
+namespace Tobexkee\Reloadly;
 
-use Busybrain\Reloadly\Exceptions\RuntimeException;
+use Tobexkee\Reloadly\Exceptions\RuntimeException;
 
 class Config
 {
