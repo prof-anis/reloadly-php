@@ -21,12 +21,12 @@
         "illuminate/container": "^8.1",
         "illuminate/support": "^8.1",
         "guzzlehttp/guzzle": "^7.0",
-        "illuminate/http": "^8.1",
-        "phpunit/phpunit": "^9.4",
-        "mockery/mockery": "^1.4"
+        "illuminate/http": "^8.1"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^9.4"
     },
     "scripts": {
         "fix-style":"php-cs-fixer fix --verbose"
