@@ -5,6 +5,7 @@ namespace Busybrain\Reloadly\Api;
 use Busybrain\Reloadly\Client;
 use Busybrain\Reloadly\Contract\ApiInterface;
 use Busybrain\Reloadly\Contract\ApplicationInterface;
+use Busybrain\Reloadly\Contract\Config;
 use Busybrain\Reloadly\Exceptions\ClientErrorException;
 use Busybrain\Reloadly\Http\ResponseMediator;
 use GuzzleHttp\Exception\ClientException;
@@ -13,11 +14,15 @@ abstract class BaseApi implements ApiInterface
 {
     protected const BASE_URI = 'https://topups-sandbox.reloadly.com';
 
-    private $client;
+    private  $client;
+
+    private  $config;
 
     public function __construct(ApplicationInterface $app)
     {
         $this->client = $app->make(Client::class);
+        $this->config = $app->make(Config::class);
+        $this->baseURL = $this->config->getAudience();
     }
 
     protected function get(string $uri, array $parameters = [], array $headers = []): string | array
