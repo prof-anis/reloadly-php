@@ -3,7 +3,7 @@
 This package allows you to integrate the Reloadly airtime/data API into your application without breaking a sweat. 
 
 ## Installation
-composer require tobexkee/reloadly
+composer require tobexkee/reloadly-php
 
 
 ## Usage
