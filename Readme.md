@@ -3,7 +3,7 @@
 This package allows you to integrate the Reloadly airtime/data API into your application without breaking a sweat. 
 
 ## Installation
-composer require busybrain/reloadly
+composer require tobexkee/reloadly
 
 
 ## Usage
@@ -11,7 +11,7 @@ composer require busybrain/reloadly
 ```php
 <?php
   require "vendor/autoload.php";
-  use Busybrain\Reloadly\Reloadly;
+  use Tobexkee\Reloadly\Reloadly;
   
   
   $client = new Reloadly($client_id, $client_secret, $audience);
