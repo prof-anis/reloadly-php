@@ -1,9 +1,9 @@
 <?php
 
-namespace Busybrain\Reloadly\Test;
+namespace Tobexkee\Reloadly\Test;
 
-use Busybrain\Reloadly\App as ReloadlyApplication;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
+use Tobexkee\Reloadly\App as ReloadlyApplication;
 
 class TestCase extends PHPUnitTestCase
 {

@@ -1,12 +1,12 @@
 {
-    "name": "busybrain/reloadly",
+    "name": "tobexkee/reloadly",
     "description": "A simple php library to interact with the reloadly api",
     "type": "library",
     "license": "mit",
     "autoload":{
         "psr-4":{
-            "Busybrain\\Reloadly\\" : "src/",
-            "Busybrain\\Reloadly\\Test\\" : "test/"
+            "Tobexkee\\Reloadly\\" : "src/",
+            "Tobexkee\\Reloadly\\Test\\" : "test/"
         }
     },
     "authors": [
@@ -21,12 +21,12 @@
         "illuminate/container": "^8.1",
         "illuminate/support": "^8.1",
         "guzzlehttp/guzzle": "^7.0",
-        "illuminate/http": "^8.1",
-        "phpunit/phpunit": "^9.4",
-        "mockery/mockery": "^1.4"
+        "illuminate/http": "^8.1"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^9.4"
     },
     "scripts": {
         "fix-style":"php-cs-fixer fix --verbose"

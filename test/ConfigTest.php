@@ -1,8 +1,8 @@
 <?php
 
-namespace Busybrain\Reloadly\Test;
+namespace Tobexkee\Reloadly\Test;
 
-use Busybrain\Reloadly\Config;
+use Tobexkee\Reloadly\Config;
 
 class ConfigTest extends TestCase
 {

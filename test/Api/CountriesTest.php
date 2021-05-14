@@ -1,11 +1,11 @@
 <?php
 
-namespace Busybrain\Reloadly\Test\Api;
+namespace Tobexkee\Reloadly\Test\Api;
 
-use Busybrain\Reloadly\Api\Countries;
-use Busybrain\Reloadly\App;
-use Busybrain\Reloadly\Client;
-use Busybrain\Reloadly\Test\TestCase;
+use Tobexkee\Reloadly\Api\Countries;
+use Tobexkee\Reloadly\App;
+use Tobexkee\Reloadly\Client;
+use Tobexkee\Reloadly\Test\TestCase;
 
 class CountriesTest extends TestCase
 {

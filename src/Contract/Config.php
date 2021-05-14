@@ -1,6 +1,6 @@
 <?php
 
-namespace Busybrain\Reloadly\Contract;
+namespace Tobexkee\Reloadly\Contract;
 
 interface Config
 {

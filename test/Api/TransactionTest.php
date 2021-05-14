@@ -1,11 +1,11 @@
 <?php
 
-namespace Busybrain\Reloadly\Test;
+namespace Tobexkee\Reloadly\Test;
 
-use Busybrain\Reloadly\Api\Transactions;
-use Busybrain\Reloadly\App;
-use Busybrain\Reloadly\Client;
-use Busybrain\Reloadly\Test\Api\ApiTestTrait;
+use Tobexkee\Reloadly\Api\Transactions;
+use Tobexkee\Reloadly\App;
+use Tobexkee\Reloadly\Client;
+use Tobexkee\Reloadly\Test\Api\ApiTestTrait;
 
 class TransactionTest extends TestCase
 {

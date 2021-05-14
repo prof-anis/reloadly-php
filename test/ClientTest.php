@@ -1,8 +1,8 @@
 <?php
 
-namespace Busybrain\Reloadly\Test;
+namespace Tobexkee\Reloadly\Test;
 
-use Busybrain\Reloadly\Client;
+use Tobexkee\Reloadly\Client;
 
 class ClientTest extends TestCase
 {
