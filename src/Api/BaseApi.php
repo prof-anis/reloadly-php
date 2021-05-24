@@ -2,21 +2,19 @@
 
 namespace Tobexkee\Reloadly\Api;
 
-use GuzzleHttp\Exception\ClientException;
 use Tobexkee\Reloadly\Client;
+use Tobexkee\Reloadly\Config;
 use Tobexkee\Reloadly\Contract\ApiInterface;
 use Tobexkee\Reloadly\Contract\ApplicationInterface;
-use Tobexkee\Reloadly\Contract\Config;
-use Tobexkee\Reloadly\Exceptions\ClientErrorException;
 use Tobexkee\Reloadly\Http\ResponseMediator;
 
 abstract class BaseApi implements ApiInterface
 {
     protected string $baseUrl;
 
-    private $client;
+    private Client $client;
 
-    private $config;
+    private Config $config;
 
     public function __construct(ApplicationInterface $app)
     {
@@ -25,31 +23,23 @@ abstract class BaseApi implements ApiInterface
         $this->baseUrl = $this->config->getAudience();
     }
 
-    protected function get(string $uri, array $parameters = [], array $headers = []): string | array
+    public function get(string $uri, array $parameters = [], array $headers = []): string | array
     {
         $uri = count($parameters) > 0
             ? $this->baseUrl . $uri . '?' . http_build_query($parameters)
             : $this->baseUrl . $uri;
 
-        try {
-            $response = $this->client->withToken()->get($uri, ['headers' => $headers]);
+        $response = $this->client->withToken()->get($uri, ['headers' => $headers]);
 
-            return ResponseMediator::getContent($response);
-        } catch (ClientException $e) {
-            throw new ClientErrorException($e->getMessage());
-        }
+        return ResponseMediator::getContent($response);
     }
 
-    protected function post(string $uri, array $parameters = [], array $headers = []): string | array
+    public function post(string $uri, array $parameters = [], array $headers = []): string | array
     {
         $uri = $this->baseUrl . $uri;
 
-        try {
-            $response = $this->client->withToken()->post($uri, ['json' => $parameters, 'headers' => $headers]);
+        $response = $this->client->withToken()->post($uri, ['json' => $parameters, 'headers' => $headers]);
 
-            return ResponseMediator::getContent($response);
-        } catch (ClientException $e) {
-            throw new ClientErrorException($e->getMessage());
-        }
+        return ResponseMediator::getContent($response);
     }
 }

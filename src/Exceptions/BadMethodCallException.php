@@ -2,6 +2,8 @@
 
 namespace Tobexkee\Reloadly\Exceptions;
 
-class BadMethodCallException extends \Exception
+use Exception;
+
+class BadMethodCallException extends Exception
 {
 }
