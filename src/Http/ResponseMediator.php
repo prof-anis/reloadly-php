@@ -2,7 +2,6 @@
 
 namespace Tobexkee\Reloadly\Http;
 
-use GuzzleHttp\Psr7\Response;
 use Illuminate\Support\Collection;
 
 /**
@@ -35,17 +34,5 @@ class ResponseMediator
         }
 
         return $content;
-    }
-
-    public static function getHeader(Response $response, $name): string | array
-    {
-        $headers = $response->getHeader($name);
-
-        return array_shift($headers);
-    }
-
-    public static function getHeaders(Response $response): array
-    {
-        return $response->getHeaders();
     }
 }

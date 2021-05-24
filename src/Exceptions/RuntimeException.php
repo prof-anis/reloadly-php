@@ -2,6 +2,8 @@
 
 namespace Tobexkee\Reloadly\Exceptions;
 
-class RuntimeException extends \RuntimeException
+use RuntimeException as Exception;
+
+class RuntimeException extends Exception
 {
 }

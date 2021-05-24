@@ -4,10 +4,8 @@ namespace Tobexkee\Reloadly;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\BindingResolutionException;
-use Tobexkee\Reloadly\Config as ReloadlyConfig;
 use Tobexkee\Reloadly\Contract\ApiInterface;
 use Tobexkee\Reloadly\Contract\ApplicationInterface;
-use Tobexkee\Reloadly\Contract\Config;
 use Tobexkee\Reloadly\Exceptions\BadMethodCallException;
 
 class App extends Container implements ApplicationInterface
@@ -53,17 +51,15 @@ class App extends Container implements ApplicationInterface
     protected function vendorBindings(): App
     {
         $this->instance(ApplicationInterface::class, $this);
-        $config = new ReloadlyConfig($this->client_key, $this->secret_key, $this->env);
-        $this->instance(Config::class, $config);
-
-        $this->bind(Client::class, function ($app) {
+        $this->instance(Config::class, new Config($this->client_key, $this->secret_key, $this->env));
+        $this->bind(Client::class, function (ApplicationInterface $app) {
             return new Client($app);
         });
 
         return $this;
     }
 
-    public function makeApi($api): ApiInterface
+    public function makeApi(string $api): ApiInterface
     {
         try {
             return	$this->make($api);

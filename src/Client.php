@@ -4,7 +4,6 @@ namespace Tobexkee\Reloadly;
 
 use GuzzleHttp\Client as GuzzleClient;
 use Tobexkee\Reloadly\Contract\ApplicationInterface;
-use Tobexkee\Reloadly\Contract\Config;
 use Tobexkee\Reloadly\Http\ResponseMediator;
 
 class Client
