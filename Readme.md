@@ -5,6 +5,10 @@ This package allows you to integrate the Reloadly airtime/data API into your app
 ## Installation
 composer require tobexkee/reloadly-php
 
+## Demo
+You test see the demo on PHPSandbox 
+
+<figure style="height: 500px;"><iframe src="https://phpsandbox.io/e/x/96yon?&layout=EditorPreview&iframeId=0p92l0kt4b&theme=dark&defaultPath=/&showExplorer=yes" style="display: block" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" height="100%" width="100%"></iframe></figure>
 
 ## Usage
   First instantiate an object of the class.

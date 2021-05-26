@@ -42,6 +42,16 @@ class ReloadlyTest extends TestCase
         $this->assertInstanceOf($object, (new Reloadly())->{$api}());
     }
 
+    /**
+     * @dataProvider provideApi
+     *
+     * @test
+     */
+    public function apiWillReturnAppropriateObjectWhenStaticallyCalled($api, $object): void
+    {
+        $this->assertInstanceOf($object, Reloadly::{$api}());
+    }
+
     public function provideApi()
     {
         return [
