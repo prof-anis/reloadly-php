@@ -20,7 +20,7 @@ class App extends Container implements ApplicationInterface
 
     public string $env;
 
-    public function __construct(string $client_key = '', string $secret_key = '', string $env = 'sandbox')
+    public function __construct(string $client_key = '', string $secret_key = '', string $env = '')
     {
         $this->client_key = $client_key;
         $this->secret_key = $secret_key;

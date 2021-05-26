@@ -23,11 +23,11 @@ class Config
 
     protected const LIVE_URI = 'https://topups.reloadly.com';
 
-    public function __construct(?string $client_key = '', ?string $secret_key = '', string $env = 'sandbox')
+    public function __construct(?string $client_key = '', ?string $secret_key = '', string $env = '')
     {
         $this->client_key = $client_key ?: getenv('RELOADLY_CLIENT_KEY');
         $this->secret_key = $secret_key ?: getenv('RELOADLY_SECRET_KEY');
-        $this->env = $env;
+        $this->env = $env ?: getenv('RELOADLY_ENV');;
 
         if (! $this->client_key || ! $this->secret_key) {
             throw new RuntimeException('Secret key and/or public key not set');
