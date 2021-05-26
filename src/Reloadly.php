@@ -16,8 +16,8 @@ class Reloadly
         return $this->app->makeApi($method);
     }
 
-    public function __callStatic($name, $arguments)
+    public static function __callStatic(string $method, array $args): BaseApi
     {
-        return (new App())
+        return (new App())->makeApi($method);
     }
 }
