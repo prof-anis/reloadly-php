@@ -27,7 +27,7 @@ class Config
     {
         $this->client_key = $client_key ?: getenv('RELOADLY_CLIENT_KEY');
         $this->secret_key = $secret_key ?: getenv('RELOADLY_SECRET_KEY');
-        $this->env = $env ?: getenv('RELOADLY_ENV');;
+        $this->env = $env ?: getenv('RELOADLY_ENV');
 
         if (! $this->client_key || ! $this->secret_key) {
             throw new RuntimeException('Secret key and/or public key not set');
